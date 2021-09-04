@@ -56,7 +56,7 @@ if __name__=="__main__":
                                         title="Vaccine Slots Availble",
                                         # the body of the notification
                                         message=f"Center Name : {centerName}, {pincode} \nAvailable slots : {availbleSlots}, {price}\nVaccine : {vaccineName}, Date : {dateOfSlot}",
-                                        app_icon = r"D:\000 PLACEMENT\PROJECTS\Cowin Vaccine\CoWin-Vaccine-Notifier-main\CoWin-Vaccine-Notifier-main\icon.ico",
+                                        app_icon = r"icon\icon.ico",
                                         timeout=5
                                         )
                                         print("\n")
@@ -66,12 +66,12 @@ if __name__=="__main__":
                     
         if counter:
             mixer.init()
-            mixer.music.load(r"D:\000 PLACEMENT\PROJECTS\Cowin Vaccine\CoWin-Vaccine-Notifier-main\CoWin-Vaccine-Notifier-main\dingdong.wav")
+            mixer.music.load(r"sound\dingdong.wav")
             mixer.music.play()
             print("Search Completed!")
         else:
             mixer.init()
-            mixer.music.load(r"D:\000 PLACEMENT\PROJECTS\Cowin Vaccine\CoWin-Vaccine-Notifier-main\CoWin-Vaccine-Notifier-main\dingdong.wav")
+            mixer.music.load(r"sound\dingdong.wav")
             mixer.music.play()
             print("No Vaccination slot available!")
 
