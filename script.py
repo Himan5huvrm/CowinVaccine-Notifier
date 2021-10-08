@@ -59,16 +59,13 @@ while True:
                 print("No Response!")
 
     if counter:
-        mixer.init()
-        mixer.music.load(r"sound\dingdong.wav")
-        mixer.music.play()
         print("Search Completed!")
     else:
-        mixer.init()
-        mixer.music.load(r"sound\dingdong.wav")
-        mixer.music.play()
         print("No Vaccination slot available!")
-
+                                                                                                                         
+    mixer.init()
+    mixer.music.load(r"sound\dingdong.wav")
+    mixer.music.play()
     dt = datetime.now() + timedelta(minutes=30)
 
     while datetime.now() < dt:
